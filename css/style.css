@@ -1,0 +1,132 @@
+* { font-family: Arial; margin: 0; padding: 0; color: #fff; box-sizing: border-box;}
+html, body { height: 100%; font-variant-caps: all-petite-caps;}
+
+body{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+:root{
+    --verde:#DAF7A6;
+    --amarillo:#FFC300;
+    --rojo:#FF5733;
+    --rosa:#C70039;
+    --morado_a:#900C3F;
+    --morado_b:#581845;
+}
+/* header del body */
+.header{
+    background-color: var(--rosa);
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* logo y barra de navegacion menu */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.navbar a{
+    background-color: #111111;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    
+    margin: 0 1rem;
+}
+.navbar a:hover{
+    background-color: #4d4d4d;
+
+}
+
+/* contendor principal del body */
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+
+.section{
+    background-color: var(--rojo);
+    padding: 1rem;
+    flex: 80% 1;
+}
+.aside{
+    background-color: var(--morado_b);
+    padding: 1rem;
+    flex: 20% 1;
+}
+
+/* pie del body */
+.footer{
+    width: 100%;
+    padding: 5rem;
+    background-color: var(--amarillo);
+}
+
+
+@media screen and (max-width:810px) {
+    /* header del body */
+.header{
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+/* logo y barra de navegacion menu */
+
+.navbar{
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+
+.navbar a{
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+
+}
+
+
+
+@media screen and (max-width:410px) {
+    /* header del body */
+.header{
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+/* logo y barra de navegacion menu */
+
+.navbar{
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+
+.navbar a{
+    width: 100%;
+    margin: 0;
+    padding: 1rem .5rem;
+    text-align: center;
+
+}
+
+
+}
